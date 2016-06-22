@@ -1,0 +1,23 @@
+{
+  "name": "wright",
+  "version": "0.0.1",
+  "description": "A simple language linter mainly for Chinese.",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laosb/wright.git"
+  },
+  "keywords": [
+    "lint",
+    "Chinese"
+  ],
+  "author": "laosb",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/laosb/wright/issues"
+  },
+  "homepage": "https://github.com/laosb/wright#readme"
+}
