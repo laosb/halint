@@ -21,7 +21,27 @@ const fileParsers = {
 const fileLinters = {
   'zh_cn'(lines, langRules) {
     let alerts = [];
-    //TBA
+    lines.forEach(({ line, lineNum }) => {
+      if (langRules['space-between-han-west']) {
+        if (line.match(/[A-Za-z]+/ig).count() !== 
+          line.match(/[ “‘，。：；（][A-Za-z]+[ ”’，。：；）]/ig).count()) {
+            alerts.push({
+              lineNum,
+              info: `在 ${line.match(/[A-Za-z]+/ig).toString()} 周围缺少空格`,
+              rule: 'space-between-han-west'
+            });
+          }
+      }
+      if (langRules['avoid-curly-quotes']) {
+        if (line.match(/[“‘’”]/ig).count() > 0) {
+          alerts.push({
+              lineNum,
+              info: `避免使用弯引号（“”及‘’）。`,
+              rule: 'avoid-curly-quotes'
+            });
+        }
+      }
+    });
     return alerts;
   }
 };
