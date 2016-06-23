@@ -1,5 +1,5 @@
 # wright
-wright, a simple language linter mainly for Chinese.
+wright, a simple language linter mainly for Chinese. And it can also check your source file format(Markdown, etc.).
 
 ## Usage
 
