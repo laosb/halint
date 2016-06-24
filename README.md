@@ -1,4 +1,7 @@
 # wright
+
+[![Build Status](https://travis-ci.org/laosb/wright.svg?branch=master)](https://travis-ci.org/laosb/wright)
+
 wright, a simple language linter mainly for Chinese. And it can also check your source file format(Markdown, etc.).
 
 ## Usage
