@@ -15,6 +15,10 @@ Coming soon.
 
 Build first, and then `npm test`.
 
+### Code linting
+
+`npm run lint` powered by ESLint. Please ensure that your code is linting-error/warnings-free before submitting a PR.
+
 ## License
 
 MIT
