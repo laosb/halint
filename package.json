@@ -7,7 +7,7 @@
     "test": "./node_modules/.bin/mocha --reporter spec",
     "build": "babel src --presets babel-preset-es2015 --out-dir dist",
     "lint": "eslint .",
-    "pretest": "npm run lint --silent"
+    "pretest": "npm run lint --silent && npm run build"
   },
   "repository": {
     "type": "git",
