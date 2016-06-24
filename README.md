@@ -11,6 +11,10 @@ Coming soon.
 
 `npm run build`, and you'll see the Babel-compiled files in `dist/`.
 
+### Running tests
+
+Build first, and then `npm test`.
+
 ## License
 
 MIT
