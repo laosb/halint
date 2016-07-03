@@ -1,5 +1,5 @@
 {
-  "name": "wright",
+  "name": "wright-core",
   "version": "0.0.1",
   "description": "A simple language linter mainly for Chinese.",
   "main": "./dist/index.js",
