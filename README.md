@@ -6,6 +6,14 @@ wright, a simple language linter mainly for Chinese. And it can also check your 
 
 ## Usage
 
+```sh
+npm i wright-core --save
+```
+
+```javascript
+import wright from 'wright-core';
+```
+
 Coming soon.
 
 ## Contributing
