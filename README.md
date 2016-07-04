@@ -20,7 +20,13 @@ Coming soon.
 
 ### Build locally
 
+#### Node (Normal Environment)
+
 `npm run build`, and you'll see the Babel-compiled files in `dist/`.
+
+#### Browser
+
+`npm run build && npm run build-browser`, `dist/index.b.js` is the browser bundle.
 
 ### Running tests
 
