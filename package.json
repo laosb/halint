@@ -7,6 +7,7 @@
     "test": "./node_modules/.bin/mocha --reporter spec",
     "build": "babel src --presets babel-preset-es2015 --out-dir dist",
     "build-browser": "browserify dist/index.js -o dist/index.b.js",
+    "browser-minify": "uglifyjs dist/index.b.js -c -o dist/index.b.min.js",
     "lint": "eslint .",
     "pretest": "npm run lint --silent && npm run build"
   },
@@ -35,7 +36,8 @@
     "eslint-plugin-jsx-a11y": "^1.5.3",
     "eslint-plugin-react": "^5.2.2",
     "mocha": "^2.5.3",
-    "should": "^9.0.2"
+    "should": "^9.0.2",
+    "uglify-js": "^2.7.0"
   },
   "dependencies": {
     "underscore": "^1.8.3"
