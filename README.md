@@ -28,6 +28,8 @@ Coming soon.
 
 `npm run build && npm run build-browser`, `dist/index.b.js` is the browser bundle.
 
+To minify, use `npm run browser-minify` then.
+
 ### Running tests
 
 Build first, and then `npm test`.
