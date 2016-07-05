@@ -3,10 +3,14 @@
   "version": "0.0.2",
   "description": "A simple language linter mainly for Chinese.",
   "main": "./dist/index.js",
+  "browser": {
+    "underscore": "./src/shims/underscore.js",
+    "babel-polyfill": "./src/shims/babel-polyfill.js"
+  },
   "scripts": {
     "test": "./node_modules/.bin/mocha --reporter spec",
     "build": "babel src --presets babel-preset-es2015 --out-dir dist",
-    "build-browser": "browserify dist/index.js -o dist/index.b.js",
+    "build-browser": "browserify dist/index.js -s wright -o dist/wright-core.b.js",
     "browser-minify": "uglifyjs dist/index.b.js -c -o dist/index.b.min.js",
     "lint": "eslint .",
     "pretest": "npm run lint --silent && npm run build"
