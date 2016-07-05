@@ -26,11 +26,11 @@ Coming soon.
 
 #### Browser
 
-`npm run build && npm run build-browser`, `dist/index.b.js` is the browser bundle.
+`npm run build && npm run build-browser`, `dist/wright-core.b.js` is the browser bundle.
 
 To minify, use `npm run browser-minify` then.
 
-You'll need to load `babel-polyfill` and `underscore` before the browser bundle, as we just have a shim to load them from `window`.
+You'll need to load `babel-polyfill` and `underscore` before the browser bundle, as we just have a shim to load them from `window`. So `lodash` may also works with `wright` as we just use `window._`.
 
 ### Running tests
 
