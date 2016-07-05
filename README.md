@@ -30,6 +30,8 @@ Coming soon.
 
 To minify, use `npm run browser-minify` then.
 
+You'll need to load `babel-polyfill` and `underscore` before the browser bundle, as we just have a shim to load them from `window`.
+
 ### Running tests
 
 Build first, and then `npm test`.
