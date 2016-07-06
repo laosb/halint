@@ -14,7 +14,7 @@
     "browser-minify": "uglifyjs dist/wright-core.b.js -c -o dist/wright-core.b.min.js",
     "lint": "eslint .",
     "pretest": "npm run lint --silent && npm run build",
-    "prepublish": "npm run build && npm run build-browser && npm run browser-minify",
+    "prepublish": "npm run build && npm run build-browser && npm run browser-minify && npm build-web",
     "build-web": "cp dist/wright-core.b.min.js web/assets/wright-core.b.min.js"
   },
   "repository": {
