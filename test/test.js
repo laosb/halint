@@ -71,4 +71,40 @@ describe('#zh_cn', function() {
       syntax: []
     });
   });
+  it('avoid-curly-quotes 3', function() {
+    fileContent = '‘代码格式检查’是自动检查常规错误或编码风格错误的过程。';
+    rules = { syntax: {}, lang: { 'avoid-curly-quotes': true } };
+    wright(fileContent, 'zh_cn', 'plain', rules).should.deepEqual({
+      lang: [
+        { info: '避免使用弯引号（“”及‘’）。', lineNum: 1, rule: 'avoid-curly-quotes' }
+      ],
+      syntax: []
+    });
+  });
+  
+  it('avoid-conjuncted-spaces 1', function() {
+    fileContent = 'Meteor，一个用于开发现代网页和移动应用的全栈 JavaScript 平台。';
+    rules = { syntax: {}, lang: { 'avoid-conjuncted-spaces': true } };
+    wright(fileContent, 'zh_cn', 'plain', rules).should.be.empty();
+  });
+  it('avoid-conjuncted-spaces 2', function() {
+    fileContent = 'Meteor，一个用于开发现代网页和移动应用的全栈 JavaScript  平台。';
+    rules = { syntax: {}, lang: { 'avoid-conjuncted-spaces': true } };
+    wright(fileContent, 'zh_cn', 'plain', rules).should.deepEqual({
+      lang: [
+        { info: '避免连用空格。', lineNum: 1, rule: 'avoid-conjuncted-spaces' }
+      ],
+      syntax: []
+    });
+  });
+  it('avoid-conjuncted-spaces 3', function() {
+    fileContent = 'Meteor，一个用于开发现代网页和移动应用的全栈 JavaScript   平台。';
+    rules = { syntax: {}, lang: { 'avoid-conjuncted-spaces': true } };
+    wright(fileContent, 'zh_cn', 'plain', rules).should.deepEqual({
+      lang: [
+        { info: '避免连用空格。', lineNum: 1, rule: 'avoid-conjuncted-spaces' }
+      ],
+      syntax: []
+    });
+  });
 });
