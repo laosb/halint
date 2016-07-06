@@ -29,7 +29,9 @@ const fileLinters = {
 
     lines.forEach(({ line, lineNum }) => {
       const west = line.match(/[A-Za-z0-9\-]+/ig);
-      let westSpaced = line.match(/[\^ “‘「『，。：；（][A-Za-z0-9\-]+[ ”’』」，。：；）$]/ig);
+      // Add a space before because a western word as beginning should be OK, but at the end
+      // is not allowed.
+      let westSpaced = ` ${line}`.match(/[ “‘「『，。：；（！？][A-Za-z0-9\-]+[ ”’』」，。：；）！？]/ig);
 
       if (westSpaced !== null) {
         // So we need to remove spaces or commas, then compare two arrays.
