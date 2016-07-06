@@ -29,10 +29,10 @@
     var ractive = new Ractive({
       el: '#container',
       template: '#template',
-      data: { content: "ÄãºÃ£¬ÕâÀïÊÇ wright ÊÀ½ç£¡" },
+      data: { content: "ä½ å¥½ï¼Œè¿™é‡Œæ˜¯ wright ä¸–ç•Œï¼" },
     });
     ractive.observe('content', function(data){
-      ractive.set('alerts', wright(data, 'zh_cn', 'plain', rules));
+      ractive.set('alerts', wright.default(data, 'zh_cn', 'plain', rules));
     });
   </script>
 </body>
