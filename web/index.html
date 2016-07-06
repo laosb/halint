@@ -14,7 +14,7 @@
     <h5>Language issues</h5>
     <ul>
     {{#each alerts.lang}}
-      <li>{{.}}</li>
+      <li>Line: {{lineNum}}, rule <b><code>{{rule}}</code></b>, {{info}}</li>
     {{/each}}
     </ul>
     {{else}}
