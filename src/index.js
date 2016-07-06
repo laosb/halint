@@ -1,6 +1,6 @@
 import 'babel-polyfill';
 
-import { _ } from 'underscore';
+import _ from 'underscore';
 
 // TODO: Move fileParsers and fileLinters to separted files.
 const fileParsers = {
