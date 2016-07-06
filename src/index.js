@@ -60,6 +60,15 @@ const fileLinters = {
           });
         }
       }
+      if (langRules['avoid-conjucted-spaces']) {
+        if (line.match(/ [ ]/ig)) {
+          alerts.push({
+            lineNum,
+            info: '避免连用空格。',
+            rule: 'avoid-conjucted-spaces',
+          });
+        }
+      }
     });
     return alerts;
   },
