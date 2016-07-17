@@ -70,7 +70,7 @@ const fileLinters = {
         }
       }
       if (langRules['prefer-full-punctuations']) {
-        if (line.match(/"'\(\),\.\?:;!/ig)) {
+        if (line.match(/["'\(\),\.\?:;!]/ig)) {
           alerts.push({
             lineNum,
             info: '使用全角标点符号，而不是半角标点符号。',
