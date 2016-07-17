@@ -107,4 +107,20 @@ describe('#zh_cn', function() {
       syntax: []
     });
   });
+  
+  it('prefer-full-punctuations 1', function() {
+    fileContent = 'Meteor，一个用于开发现代网页和移动应用的全栈 JavaScript 平台。';
+    rules = { syntax: {}, lang: { 'prefer-full-punctuations': true } };
+    wright(fileContent, 'zh_cn', 'plain', rules).should.be.empty();
+  });
+  it('prefer-full-punctuations 2', function() {
+    fileContent = 'Meteor,一个用于开发现代网页和移动应用的全栈 JavaScript 平台.';
+    rules = { syntax: {}, lang: { 'prefer-full-punctuations': true } };
+    wright(fileContent, 'zh_cn', 'plain', rules).should.deepEqual({
+      lang: [
+        { info: '使用全角标点符号，而不是半角标点符号。', lineNum: 1, rule: 'prefer-full-punctuations' }
+      ],
+      syntax: []
+    });
+  });
 });
