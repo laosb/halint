@@ -12,9 +12,18 @@ npm i wright-core --save
 
 ```javascript
 import wright from 'wright-core';
+const fileContent = '你们有一个好，全世界甚么地方，你们跑得最快，但是问来问去的问题呀，too simple，sometimes naive，懂得没有？';
+const rules = { syntax: {}, lang: {
+  'space-between-han-west': true,
+  'avoid-curly-quotes': true,
+  'avoid-conjuncted-spaces': true,
+  'prefer-full-punctuations': true,
+} };
+
+wright(fileContent, 'zh_cn', 'plain', rules);
 ```
 
-Coming soon.
+Full documentation coming soon.
 
 ## Contributing
 
