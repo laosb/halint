@@ -24,7 +24,7 @@ const fileParsers = {
 };
 
 const fileLinters = {
-  'zh_cn'(lines, langRules) {
+  zh_cn(lines, langRules) {
     const alerts = [];
 
     lines.forEach(({ line, lineNum }) => {
