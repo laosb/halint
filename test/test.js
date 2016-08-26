@@ -1,5 +1,3 @@
-require("blanket");
-
 var should = require('should'),
     wright = require('../dist/index.js').default;
 
