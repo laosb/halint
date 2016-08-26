@@ -1,6 +1,6 @@
 {
   "name": "wright-core",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A simple language linter mainly for Chinese.",
   "main": "./dist/index.js",
   "browser": {
