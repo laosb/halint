@@ -1,3 +1,5 @@
+require("blanket");
+
 var should = require('should'),
     wright = require('../dist/index.js').default;
 
@@ -81,7 +83,7 @@ describe('#zh_cn', function() {
       syntax: []
     });
   });
-  
+
   it('avoid-conjuncted-spaces 1', function() {
     fileContent = 'Meteor，一个用于开发现代网页和移动应用的全栈 JavaScript 平台。';
     rules = { syntax: {}, lang: { 'avoid-conjuncted-spaces': true } };
@@ -107,7 +109,7 @@ describe('#zh_cn', function() {
       syntax: []
     });
   });
-  
+
   it('prefer-full-punctuations 1', function() {
     fileContent = 'Meteor，一个用于开发现代网页和移动应用的全栈 JavaScript 平台。';
     rules = { syntax: {}, lang: { 'prefer-full-punctuations': true } };
