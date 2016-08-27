@@ -1,17 +1,17 @@
-# wright
+# 🐸 HaLint
 
 [![Build Status](https://travis-ci.org/laosb/wright.svg?branch=master)](https://travis-ci.org/laosb/wright)
 
-wright, a simple language linter mainly for Chinese. And it can also check your source file format(Markdown, etc.).
+HaLint, aka wright, is a simple language linter mainly for Chinese. And it can also check your source file format(Markdown, etc.).
 
 ## Usage
 
 ```sh
-npm i wright-core --save
+npm i halint --save
 ```
 
 ```javascript
-import wright from 'wright-core';
+import halint from 'halint';
 const fileContent = '你们有一个好，全世界甚么地方，你们跑得最快，但是问来问去的问题呀，too simple，sometimes naive，懂得没有？';
 const rules = { syntax: {}, lang: {
   'space-between-han-west': true,
@@ -20,7 +20,7 @@ const rules = { syntax: {}, lang: {
   'prefer-full-punctuations': true,
 } };
 
-wright(fileContent, 'zh_cn', 'plain', rules);
+halint(fileContent, 'zh_cn', 'plain', rules);
 ```
 
 Full documentation coming soon.
@@ -35,7 +35,7 @@ Full documentation coming soon.
 
 #### Browser
 
-`npm run build && npm run build-browser`, `dist/wright-core.b.js` is the browser bundle.
+`npm run build && npm run build-browser`, `dist/halint.b.js` is the browser bundle.
 
 To minify, use `npm run browser-minify` then.
 
