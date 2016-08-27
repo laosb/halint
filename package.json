@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/laosb/wright.git"
+    "url": "git+https://github.com/laosb/halint.git"
   },
   "keywords": [
     "lint",
@@ -29,9 +29,9 @@
   "author": "laosb",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/laosb/wright/issues"
+    "url": "https://github.com/laosb/halint/issues"
   },
-  "homepage": "https://github.com/laosb/wright#readme",
+  "homepage": "https://github.com/laosb/halint#readme",
   "devDependencies": {
     "babel-cli": "^6.10.1",
     "babel-preset-es2015": "^6.9.0",
