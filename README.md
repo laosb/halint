@@ -1,6 +1,6 @@
 # 🐸 HaLint
 
-[![Build Status](https://travis-ci.org/laosb/wright.svg?branch=master)](https://travis-ci.org/laosb/wright)
+[![Build Status](https://travis-ci.org/laosb/halint.svg?branch=master)](https://travis-ci.org/laosb/halint)
 
 HaLint, aka wright, is a simple language linter mainly for Chinese. And it can also check your source file format(Markdown, etc.).
 
