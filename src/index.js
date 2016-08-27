@@ -83,7 +83,7 @@ const fileLinters = {
   },
 };
 
-export default function wright(fileContent, fileLang = 'zh_cn', fileType = 'plain', rules) {
+export default function halint(fileContent, fileLang = 'zh_cn', fileType = 'plain', rules) {
   // TODO: Better mechanism for rules in preset.
   // `rules` is an object contains all rules in it. Presets are not handled by this function.
   // There is no default rules in this program, so be sure to have it yourself! wright doesn't
