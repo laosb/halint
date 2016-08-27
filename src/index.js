@@ -1,5 +1,3 @@
-import 'babel-polyfill';
-
 import _ from 'underscore';
 
 // TODO: Move fileParsers and fileLinters to separted files.

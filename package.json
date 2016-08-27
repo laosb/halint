@@ -1,11 +1,10 @@
 {
   "name": "halint",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A simple language linter mainly for Chinese.",
   "main": "./dist/index.js",
   "browser": {
-    "underscore": "./src/shims/underscore.js",
-    "babel-polyfill": "./src/shims/babel-polyfill.js"
+    "underscore": "./src/shims/underscore.js"
   },
   "scripts": {
     "test": "./node_modules/.bin/mocha --reporter spec",
@@ -48,7 +47,6 @@
     "uglify-js": "^2.7.0"
   },
   "dependencies": {
-    "babel-polyfill": "^6.9.1",
     "underscore": "^1.8.3"
   },
   "eslintConfig": {
