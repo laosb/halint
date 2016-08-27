@@ -47,7 +47,7 @@ If you `import` from this package, you won't need to change anything. But we sug
 
 To minify, use `npm run browser-minify` then.
 
-You'll need to load `babel-polyfill` and `underscore` before the browser bundle, as we just have a shim to load them from `window`. So `lodash` may also works with `wright` as we just use `window._`.
+You'll need to load `underscore` before the browser bundle, as we just have a shim to load it from `window`. So `lodash` may also works with `wright` as we just use `window._`.
 
 ### Running tests
 
