@@ -1,6 +1,6 @@
 {
   "name": "halint",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "A simple language linter mainly for Chinese.",
   "main": "./dist/index.js",
   "browser": {
