@@ -1,6 +1,6 @@
 {
   "name": "halint",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A simple language linter mainly for Chinese.",
   "main": "./dist/index.js",
   "browser": {
@@ -10,7 +10,7 @@
   "scripts": {
     "test": "./node_modules/.bin/mocha --reporter spec",
     "build": "babel src --presets babel-preset-es2015 --out-dir dist",
-    "build-browser": "browserify dist/index.js -s wright -o dist/halint.b.js",
+    "build-browser": "browserify dist/index.js -s halint -o dist/halint.b.js",
     "browser-minify": "uglifyjs dist/halint.b.js -c -o dist/halint.b.min.js",
     "lint": "eslint .",
     "pretest": "npm run lint --silent && npm run build",
