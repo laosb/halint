@@ -16,7 +16,7 @@ Every node has those keys: `type`, `lang`, `position` and one between `items` an
 
 `items` is an array containing all leaf nodes while `value` is just a *String*.
 
-`paragraph`s can have `sentence`s, `sentence`s can have `piece`s and `pieces`s can have `word`s or `mark`s. Separating `mark`s are always included at the end of the previous piece, instead of the beginning of the next one.
+`paragraph`s can have `sentence`s, `sentence`s can have `piece`s and `pieces`s can have `word`s or `mark`s. Piece-separating `mark`s (like comma, period full stop) are always included at the end of the previous piece, instead of the beginning of the next one. Non-piece-separating `mark`s just live at where they should be. 
 
 ## Example
 
