@@ -25,6 +25,12 @@ halint(fileContent, 'zh_cn', 'plain', rules);
 
 Full documentation coming soon.
 
+## Upgrading from wright
+
+Remove your `wright-core` install and install `halint` instead.
+
+If you `import` from this package, please don't forget to change `wright` into `halint` as stated in Usage above. You'll need to replace all `wright()` calls to `halint()`, too.
+
 ## Contributing
 
 ### Build locally
