@@ -29,7 +29,9 @@ Full documentation coming soon.
 
 Remove your `wright-core` install and install `halint` instead.
 
-If you `import` from this package, please don't forget to change `wright` into `halint` as stated in Usage above. You'll need to replace all `wright()` calls to `halint()`, too.
+If you use the `halint.b.min.js`, there should be no change except use `halint` instead of `wright`.
+
+If you `import` from this package, you won't need to change anything. But we suggest using the new name in your code. If so, please don't forget to change `wright` into `halint` as stated in Usage above. You'll need to replace all `wright()` calls to `halint()`, too.
 
 ## Contributing
 
