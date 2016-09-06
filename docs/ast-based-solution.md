@@ -18,6 +18,8 @@ Every node has those keys: `type`, `lang`, `position` and one between `items` an
 
 `paragraph`s can have `sentence`s, `sentence`s can have `piece`s and `pieces`s can have `word`s or `mark`s. Piece-separating `mark`s (like comma, period full stop) are always included at the end of the previous piece, instead of the beginning of the next one. Non-piece-separating `mark`s just live at where they should be. 
 
+Notice that a `word` doesn't means a "word" in most cases. `word` is just a leaf node of `piece` which was divided according to punctuations.
+
 ## Example
 
 Here is a text in Chinese:
